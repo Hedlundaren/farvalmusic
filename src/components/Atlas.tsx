@@ -121,17 +121,13 @@ export function Atlas() {
                 Where the tunes wander
               </h2>
             </div>
-            <div className="max-w-xs text-right">
-              <p className="text-sm tracking-[0.2em] text-cream/70 uppercase">
-                0{step} / 0{places.length}
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-cream/65">
-                Mostly the north. Also anywhere a good melody refused to stay put.
-              </p>
-            </div>
+            <p className="text-sm tracking-[0.2em] text-cream/70 uppercase">
+              0{step} / 0{places.length}
+            </p>
           </div>
           <motion.div
             ref={trackRef}
+            data-atlas-track
             style={reduce ? undefined : { x }}
             className="flex min-h-0 flex-1 gap-5 pl-[6vw] pr-[10vw]"
           >

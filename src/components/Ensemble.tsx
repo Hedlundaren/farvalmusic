@@ -46,7 +46,7 @@ export function Ensemble() {
               return (
                 <div
                   key={member.name}
-                  className={`absolute inset-0 transition-opacity duration-700 ${
+                  className={`absolute inset-0 transition-opacity duration-500 ${
                     showing ? "opacity-100" : "opacity-0"
                   }`}
                 >
@@ -58,16 +58,16 @@ export function Ensemble() {
                     className="object-cover"
                     aria-hidden={!showing}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-ink/25" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-ink/30" />
+                  <div className="absolute inset-x-0 bottom-0 p-10 pb-14 text-cream">
+                    <p className="text-xs tracking-[0.22em] text-cream/70">0{index + 1}</p>
+                    <p className="mt-2 font-display text-6xl leading-none">{member.name}</p>
+                    <p className="mt-3 text-lg italic text-cream/85">{member.role}</p>
+                  </div>
                 </div>
               );
             })}
-            <div className="absolute inset-x-0 bottom-0 p-10 pb-14 text-cream">
-              <p className="text-xs tracking-[0.22em] text-cream/70">0{active + 1}</p>
-              <p className="mt-2 font-display text-6xl leading-none">{members[active].name}</p>
-              <p className="mt-3 text-lg italic text-cream/85">{members[active].role}</p>
-            </div>
-            <div className="absolute top-28 left-10 max-w-xs text-cream">
+            <div className="absolute top-28 left-10 z-10 max-w-xs text-cream">
               <p className="text-xs tracking-[0.28em] uppercase text-cream/75">The band</p>
               <h2 className="mt-3 font-display text-6xl leading-[0.9]">The six</h2>
             </div>
@@ -99,10 +99,15 @@ export function Ensemble() {
                       sizes="100vw"
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink/35 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-ink/10" />
+                    <div className="absolute inset-x-0 bottom-0 p-5 text-cream">
+                      <p className="text-xs tracking-[0.2em] text-cream/75">0{index + 1}</p>
+                      <p className="mt-1 font-display text-4xl leading-none">{member.name}</p>
+                      <p className="mt-1 italic text-cream/85">{member.role}</p>
+                    </div>
                   </div>
                   <div
-                    className={`flex items-end justify-between gap-6 py-8 transition-opacity duration-500 lg:min-h-[64vh] lg:items-center lg:px-16 lg:py-0 ${
+                    className={`hidden items-end justify-between gap-6 py-8 transition-opacity duration-500 lg:flex lg:min-h-[64vh] lg:items-center lg:px-16 lg:py-0 ${
                       on ? "opacity-100" : "lg:opacity-30"
                     }`}
                   >
