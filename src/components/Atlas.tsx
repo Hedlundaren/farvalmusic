@@ -14,12 +14,16 @@ import { useEffect, useRef, useState } from "react";
 function PlaceCard({
   place,
   index,
+  className = "",
 }: {
   place: (typeof places)[number];
   index: number;
+  className?: string;
 }) {
   return (
-    <article className="relative h-[58vh] w-[78vw] max-w-[460px] shrink-0 snap-center overflow-hidden rounded-[1.6rem] sm:w-[48vw] lg:h-[62vh] lg:w-[34vw] lg:max-w-none">
+    <article
+      className={`relative h-[58vh] w-[78vw] max-w-[460px] shrink-0 snap-center overflow-hidden rounded-[1.6rem] sm:w-[48vw] lg:h-full lg:w-[34vw] lg:max-w-none ${className}`}
+    >
       <Image
         src={place.image}
         alt={place.alt}
@@ -109,27 +113,32 @@ export function Atlas() {
             : { height: distance > 0 ? distance + viewport : viewport * 3.6 }
         }
       >
-        <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
-          <div className="mb-8 flex items-end justify-between px-[6vw]">
+        <div className="sticky top-0 flex h-screen flex-col overflow-hidden pt-24 pb-8">
+          <div className="mb-5 flex shrink-0 items-end justify-between gap-10 px-[6vw]">
             <div>
               <p className="text-xs tracking-[0.28em] text-berry uppercase">A pocket atlas</p>
-              <h2 className="mt-3 max-w-xl font-display text-6xl leading-[0.95] xl:text-7xl">
+              <h2 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] xl:text-6xl">
                 Where the tunes wander
               </h2>
             </div>
-            <p className="text-sm tracking-[0.2em] text-cream/70 uppercase">
-              0{step} / 0{places.length}
-            </p>
+            <div className="max-w-xs text-right">
+              <p className="text-sm tracking-[0.2em] text-cream/70 uppercase">
+                0{step} / 0{places.length}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-cream/65">
+                Mostly the north. Also anywhere a good melody refused to stay put.
+              </p>
+            </div>
           </div>
-          <motion.div ref={trackRef} style={reduce ? undefined : { x }} className="flex gap-5 pl-[6vw] pr-[12vw]">
+          <motion.div
+            ref={trackRef}
+            style={reduce ? undefined : { x }}
+            className="flex min-h-0 flex-1 gap-5 pl-[6vw] pr-[10vw]"
+          >
             {places.map((place, index) => (
               <PlaceCard key={place.title} place={place} index={index} />
             ))}
           </motion.div>
-          <p className="mt-6 max-w-md px-[6vw] text-sm leading-relaxed text-cream/65">
-            Mostly the north. Also: anywhere a good melody refused to stay put. Keep
-            scrolling — the map moves sideways.
-          </p>
         </div>
       </div>
     </section>

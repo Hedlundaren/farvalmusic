@@ -29,11 +29,7 @@ export function Hello() {
             >
               Write to {site.bookingEmail}
             </a>
-          ) : (
-            <p className="max-w-xs text-sm leading-relaxed text-cream/70">
-              The letter box is being painted. A booking address will land here.
-            </p>
-          )}
+          ) : null}
         </div>
       </div>
     </section>

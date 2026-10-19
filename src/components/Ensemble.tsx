@@ -62,7 +62,7 @@ export function Ensemble() {
                 </div>
               );
             })}
-            <div className="absolute inset-x-0 bottom-0 p-10 text-cream">
+            <div className="absolute inset-x-0 bottom-0 p-10 pb-14 text-cream">
               <p className="text-xs tracking-[0.22em] text-cream/70">0{active + 1}</p>
               <p className="mt-2 font-display text-6xl leading-none">{members[active].name}</p>
               <p className="mt-3 text-lg italic text-cream/85">{members[active].role}</p>
@@ -75,7 +75,7 @@ export function Ensemble() {
         </div>
 
         <div className="px-5 py-10 md:px-8 lg:px-0 lg:py-0">
-          <p className="mb-8 hidden max-w-sm text-lg leading-relaxed text-ink-soft lg:mt-36 lg:ml-16 lg:block">
+          <p className="mb-4 hidden max-w-sm text-lg leading-relaxed text-ink-soft lg:ml-16 lg:block lg:pt-28">
             Pass a tune around this group and it comes back slightly changed. That is
             the point.
           </p>
@@ -89,7 +89,7 @@ export function Ensemble() {
                   ref={(node) => {
                     rows.current[index] = node;
                   }}
-                  className="border-t border-line lg:min-h-[72vh]"
+                  className="border-t border-line"
                 >
                   <div className="relative mt-6 aspect-[4/5] overflow-hidden rounded-[1.4rem] lg:hidden">
                     <Image
@@ -102,7 +102,7 @@ export function Ensemble() {
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/35 to-transparent" />
                   </div>
                   <div
-                    className={`flex items-end justify-between gap-6 py-8 transition-opacity duration-500 lg:min-h-[72vh] lg:px-16 lg:py-0 ${
+                    className={`flex items-end justify-between gap-6 py-8 transition-opacity duration-500 lg:min-h-[64vh] lg:items-center lg:px-16 lg:py-0 ${
                       on ? "opacity-100" : "lg:opacity-30"
                     }`}
                   >
