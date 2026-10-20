@@ -54,44 +54,52 @@ export type Place = {
   text: string
   image: string
   alt: string
+  /** object-position, so a wide photo still shows the right part of the frame. */
+  focus?: string
 }
 
 export const places: Place[] = [
   {
     title: "Swedish",
     text: "Polska and gånglåt. The tunes we start from, and the ones we can still play half asleep.",
-    image: "/nature/forest-mist.jpg",
-    alt: "Sunlight cutting through a dark spruce forest",
+    image: "/traditions/swedish.jpg",
+    alt: "Red wooden houses in a forest clearing",
+    focus: "center 58%",
   },
   {
     title: "Norwegian",
     text: "Springar and halling. The beat leans on purpose, and the bow follows the dance.",
-    image: "/nature/peaks.jpg",
-    alt: "Snowy peaks above a forested valley",
+    image: "/traditions/norwegian.jpg",
+    alt: "A deep blue fjord between steep green mountains",
+    focus: "center 42%",
   },
   {
     title: "Danish",
     text: "Hopsa and sønderhoning. Light on their feet, and a little sly about the rhythm.",
-    image: "/nature/birch.jpg",
-    alt: "Fog resting on a forested hillside",
+    image: "/traditions/danish.jpg",
+    alt: "White chalk cliffs dropping to the Baltic at Møns Klint",
+    focus: "72% center",
   },
   {
     title: "Indian",
     text: "Song with a long line. The melody turns back on itself before it agrees to land.",
-    image: "/nature/wildflowers.jpg",
-    alt: "Orange poppies against a clear blue sky",
+    image: "/traditions/indian-hills.jpg",
+    alt: "Tea hills under a clouded mountain in the Kannan Devan Hills",
+    focus: "center 46%",
   },
   {
     title: "Irish",
     text: "Reels and jigs. Once a set is moving, stopping feels like bad manners.",
-    image: "/nature/valley-sun.jpg",
-    alt: "Sunlit green ridges and rock towers",
+    image: "/traditions/irish.jpg",
+    alt: "A sea stack beside dark Atlantic cliffs, with wildflowers in the foreground",
+    focus: "8% 72%",
   },
   {
     title: "American",
     text: "Old-time fiddle tunes. Same family as the Nordic ones, on a different dirt road.",
-    image: "/nature/meadow.jpg",
-    alt: "A desert highway running toward a rocky mountain",
+    image: "/traditions/american.jpg",
+    alt: "Layered autumn ridges in the Great Smoky Mountains",
+    focus: "center 68%",
   },
 ]
 

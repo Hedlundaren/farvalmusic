@@ -30,12 +30,17 @@ function PlaceCard({
         fill
         sizes="(min-width: 1024px) 34vw, 80vw"
         className="object-cover"
+        style={{ objectPosition: place.focus ?? "center" }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/15 to-ink/10" />
       <div className="absolute inset-x-0 bottom-0 p-6 text-cream">
         <p className="text-xs tracking-[0.22em] text-cream/70">0{index + 1}</p>
-        <h3 className="mt-1 font-display text-4xl leading-none">{place.title}</h3>
-        <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/85">{place.text}</p>
+        <h3 className="mt-1 font-display text-4xl leading-none">
+          {place.title}
+        </h3>
+        <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/85">
+          {place.text}
+        </p>
       </div>
     </article>
   );
@@ -87,12 +92,16 @@ export function Atlas() {
       <div className="atlas-carousel px-5 py-20 lg:hidden">
         <div className="mb-8 flex items-end justify-between gap-6">
           <div>
-            <p className="text-xs tracking-[0.28em] text-berry uppercase">The traditions</p>
+            <p className="text-xs tracking-[0.28em] text-berry uppercase">
+              The traditions
+            </p>
             <h2 className="mt-3 font-display text-5xl leading-[0.95]">
               Where the tunes wander
             </h2>
           </div>
-          <p className="text-xs tracking-[0.18em] uppercase text-cream/60">Swipe</p>
+          <p className="text-xs tracking-[0.18em] uppercase text-cream/60">
+            Swipe
+          </p>
         </div>
         <div className="no-scrollbar -mx-5 flex gap-4 overflow-x-auto px-5 pb-2 snap-x snap-mandatory">
           {places.map((place, index) => (
@@ -100,7 +109,7 @@ export function Atlas() {
           ))}
         </div>
         <p className="mt-8 max-w-md text-sm leading-relaxed text-cream/70">
-          Six traditions in the set. Three from the north, and three that traveled.
+          Six traditions in the set. Three from the north, and three from afar.
         </p>
       </div>
 
@@ -116,12 +125,15 @@ export function Atlas() {
         <div className="sticky top-0 flex h-screen flex-col overflow-hidden pt-24 pb-8">
           <div className="mb-5 flex shrink-0 items-end justify-between gap-10 px-[6vw]">
             <div>
-              <p className="text-xs tracking-[0.28em] text-berry uppercase">The traditions</p>
+              <p className="text-xs tracking-[0.28em] text-berry uppercase">
+                The traditions
+              </p>
               <h2 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] xl:text-6xl">
                 Where the tunes wander
               </h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-cream/70">
-                Six traditions in the set. Three from the north, and three that traveled.
+                Six traditions in the set. Three from the north, and three from
+                afar.
               </p>
             </div>
             <p className="text-sm tracking-[0.2em] text-cream/70 uppercase">

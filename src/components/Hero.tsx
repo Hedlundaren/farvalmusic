@@ -52,8 +52,8 @@ export function Hero() {
             <span className="block italic">väl</span>
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-cream/90 md:text-lg">
-              Two violins, a guitar, a mandolin, a clarinette, and a voice. We start
-            in the north and keep the door open.
+            Two violins, a guitar, a mandolin, a clarinette, and a voice. Six
+            members, six traditions.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

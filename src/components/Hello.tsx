@@ -11,7 +11,7 @@ export function Hello() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/35 to-ink/25" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/62 to-ink/48" />
       <div className="relative z-10 flex min-h-[100svh] flex-col justify-end px-5 pt-32 pb-28 md:px-10 md:pb-32">
         <p className="text-xs tracking-[0.28em] uppercase text-cream/75">Far väl</p>
         <h2 className="mt-3 max-w-5xl font-display text-[clamp(3.4rem,8vw,7rem)] leading-[0.88] italic">

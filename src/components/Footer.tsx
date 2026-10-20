@@ -32,12 +32,28 @@ export function Footer() {
       ) : null}
       <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-cream/15 pt-6 text-xs tracking-wide text-cream/50">
         <p>© {site.name}</p>
-        <a
-          href="https://unsplash.com"
-          className="underline decoration-cream/25 underline-offset-4"
-        >
-          Nature photographs from Unsplash
-        </a>
+        <p className="text-right">
+          <a
+            href="https://unsplash.com"
+            className="underline decoration-cream/25 underline-offset-4"
+          >
+            Photographs from Unsplash
+          </a>
+          <span className="mx-1.5 text-cream/30">·</span>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:M%C3%B8ns_Klint_chalk_cliffs_1.jpg"
+            className="underline decoration-cream/25 underline-offset-4"
+          >
+            Møns Klint by kallerna
+          </a>
+          ,{" "}
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            className="underline decoration-cream/25 underline-offset-4"
+          >
+            CC BY-SA
+          </a>
+        </p>
       </div>
     </footer>
   );
