@@ -2,7 +2,7 @@ export const site = {
   name: "Far väl",
   tagline: "Nordic folk, and then some",
   description:
-    "Far väl plays Nordic folk music and tunes from across the world. Simon and Kerstin on violin, Peter on guitar, Ankita on song, Kevin on mandolin, and Daniel on clarinette.",
+    "Far väl plays Nordic folk music and tunes from across the world. Ankita on song, Peter on guitar, Kevin on mandolin, Daniel on clarinette, and Kerstin and Simon on violin.",
   contact: {
     name: "Kevin Karlsson",
     email: "farvalmusic@gmail.com",
@@ -19,7 +19,13 @@ export type Show = {
 }
 
 /** Add gigs here. An empty list shows the poster-wall empty state. */
-export const shows: Show[] = []
+export const shows: Show[] = [
+  {
+    date: "8–14 Feb 2027",
+    city: "Madrid",
+    place: "Week 6",
+  },
+]
 
 export type Social = {
   label: string
@@ -31,53 +37,16 @@ export const socials: Social[] = []
 export type Member = {
   name: string
   role: string
-  /**
-   * Portrait path, once you have photos.
-   * Example: "/band/simon.jpg"
-   * Until then, the scene image is used as a title-card backdrop.
-   */
-  portrait?: string
-  scene: string
-  sceneAlt: string
+  portrait: string
 }
 
 export const members: Member[] = [
-  {
-    name: "Simon",
-    role: "Violin",
-    scene: "/nature/forest-mist.jpg",
-    sceneAlt: "Sunlight cutting through a dark spruce forest",
-  },
-  {
-    name: "Kerstin",
-    role: "Violin",
-    scene: "/nature/autumn.jpg",
-    sceneAlt: "A still alpine lake between pine trees",
-  },
-  {
-    name: "Peter",
-    role: "Guitar",
-    scene: "/nature/pine-dark.jpg",
-    sceneAlt: "Pine trees at sunset, with rock in the foreground",
-  },
-  {
-    name: "Ankita",
-    role: "Song",
-    scene: "/nature/wildflowers.jpg",
-    sceneAlt: "Orange poppies against a clear blue sky",
-  },
-  {
-    name: "Kevin",
-    role: "Mandolin",
-    scene: "/nature/canopy.jpg",
-    sceneAlt: "Looking straight up into tall tree trunks",
-  },
-  {
-    name: "Daniel",
-    role: "Clarinette",
-    scene: "/nature/birch.jpg",
-    sceneAlt: "Fog resting on a forested hillside",
-  },
+  { name: "Ankita", role: "Song", portrait: "/members/ankita.webp" },
+  { name: "Peter", role: "Guitar", portrait: "/members/peter.webp" },
+  { name: "Kevin", role: "Mandolin", portrait: "/members/kevin.webp" },
+  { name: "Daniel", role: "Clarinette", portrait: "/members/daniel.webp" },
+  { name: "Kerstin", role: "Violin", portrait: "/members/kerstin.webp" },
+  { name: "Simon", role: "Violin", portrait: "/members/simon.webp" },
 ]
 
 export type Place = {
@@ -89,50 +58,50 @@ export type Place = {
 
 export const places: Place[] = [
   {
-    title: "The north",
-    text: "Home ground. Nordic folk, played from the inside.",
+    title: "Swedish",
+    text: "Polska and gånglåt. The tunes we start from, and the ones we can still play half asleep.",
+    image: "/nature/forest-mist.jpg",
+    alt: "Sunlight cutting through a dark spruce forest",
+  },
+  {
+    title: "Norwegian",
+    text: "Springar and halling. The beat leans on purpose, and the bow follows the dance.",
     image: "/nature/peaks.jpg",
     alt: "Snowy peaks above a forested valley",
   },
   {
-    title: "Across",
-    text: "Tunes that crossed water to get here, and sounded like they meant to stay.",
-    image: "/nature/lake.jpg",
-    alt: "A wooden dock on a calm blue lake",
+    title: "Danish",
+    text: "Hopsa and sønderhoning. Light on their feet, and a little sly about the rhythm.",
+    image: "/nature/birch.jpg",
+    alt: "Fog resting on a forested hillside",
   },
   {
-    title: "High air",
-    text: "Melodies with weather in them. Long views, long phrases.",
-    image: "/nature/mountain-lake.jpg",
-    alt: "Mountain peaks rising over a sea of clouds at sunset",
+    title: "Indian",
+    text: "Song with a long line. The melody turns back on itself before it agrees to land.",
+    image: "/nature/wildflowers.jpg",
+    alt: "Orange poppies against a clear blue sky",
   },
   {
-    title: "The road",
-    text: "Well outside the north. If a tune travels well, it is welcome.",
-    image: "/nature/meadow.jpg",
-    alt: "A desert highway running toward a rocky mountain",
-  },
-  {
-    title: "The ridge",
-    text: "A longer way around. Still folk music. Still this band.",
+    title: "Irish",
+    text: "Reels and jigs. Once a set is moving, stopping feels like bad manners.",
     image: "/nature/valley-sun.jpg",
     alt: "Sunlit green ridges and rock towers",
   },
   {
-    title: "Back under",
-    text: "Then a tune we know by heart, a little changed from the trip.",
-    image: "/nature/river.jpg",
-    alt: "A mossy canyon with a river at the bottom",
+    title: "American",
+    text: "Old-time fiddle tunes. Same family as the Nordic ones, on a different dirt road.",
+    image: "/nature/meadow.jpg",
+    alt: "A desert highway running toward a rocky mountain",
   },
 ]
 
 export const marquee = [
-  "Violin",
-  "Violin",
-  "Guitar",
   "Song",
+  "Guitar",
   "Mandolin",
   "Clarinette",
+  "Violin",
+  "Violin",
   "Nordic folk",
   "And then some",
 ]

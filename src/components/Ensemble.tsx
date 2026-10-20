@@ -41,7 +41,6 @@ export function Ensemble() {
         <div className="relative hidden lg:block">
           <div className="sticky top-0 h-screen overflow-hidden bg-moss">
             {members.map((member, index) => {
-              const src = member.portrait ?? member.scene;
               const showing = index === active;
               return (
                 <div
@@ -51,14 +50,14 @@ export function Ensemble() {
                   }`}
                 >
                   <Image
-                    src={src}
-                    alt={showing ? (member.portrait ? `${member.name}, ${member.role}` : member.sceneAlt) : ""}
+                    src={member.portrait}
+                    alt={showing ? `${member.name}, ${member.role}` : ""}
                     fill
                     sizes="50vw"
-                    className="object-cover"
+                    className="object-cover object-[center_30%]"
                     aria-hidden={!showing}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-ink/30" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-ink/40" />
                   <div className="absolute inset-x-0 bottom-0 p-10 pb-14 text-cream">
                     <p className="text-xs tracking-[0.22em] text-cream/70">0{index + 1}</p>
                     <p className="mt-2 font-display text-6xl leading-none">{member.name}</p>
@@ -93,11 +92,11 @@ export function Ensemble() {
                 >
                   <div className="relative mt-6 aspect-[4/5] overflow-hidden rounded-[1.4rem] lg:hidden">
                     <Image
-                      src={member.portrait ?? member.scene}
-                      alt={member.portrait ? `${member.name}, ${member.role}` : member.sceneAlt}
+                      src={member.portrait}
+                      alt={`${member.name}, ${member.role}`}
                       fill
                       sizes="100vw"
-                      className="object-cover"
+                      className="object-cover object-[center_30%]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-ink/10" />
                     <div className="absolute inset-x-0 bottom-0 p-5 text-cream">

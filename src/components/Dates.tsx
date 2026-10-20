@@ -26,7 +26,7 @@ export function Dates() {
             {shows.map((show) => (
               <li
                 key={`${show.date}-${show.place}`}
-                className="grid gap-2 border-t border-line py-7 md:grid-cols-[11rem_1.2fr_1fr] md:items-baseline md:gap-6"
+                className="grid gap-2 border-t border-line py-7 md:grid-cols-[13rem_1.2fr_1fr] md:items-baseline md:gap-6"
               >
                 <time className="text-sm tracking-[0.14em] text-berry uppercase">{show.date}</time>
                 <p className="font-display text-4xl leading-none">{show.city}</p>

@@ -22,7 +22,7 @@ function PlaceCard({
 }) {
   return (
     <article
-      className={`relative h-[58vh] w-[78vw] max-w-[460px] shrink-0 snap-center overflow-hidden rounded-[1.6rem] sm:w-[48vw] lg:h-full lg:w-[34vw] lg:max-w-none ${className}`}
+      className={`relative h-[58vh] w-[78vw] max-w-[460px] shrink-0 snap-center overflow-hidden rounded-[1.6rem] sm:w-[48vw] lg:h-auto lg:w-[34vw] lg:max-w-none lg:self-stretch ${className}`}
     >
       <Image
         src={place.image}
@@ -87,7 +87,7 @@ export function Atlas() {
       <div className="atlas-carousel px-5 py-20 lg:hidden">
         <div className="mb-8 flex items-end justify-between gap-6">
           <div>
-            <p className="text-xs tracking-[0.28em] text-berry uppercase">A pocket atlas</p>
+            <p className="text-xs tracking-[0.28em] text-berry uppercase">The traditions</p>
             <h2 className="mt-3 font-display text-5xl leading-[0.95]">
               Where the tunes wander
             </h2>
@@ -100,7 +100,7 @@ export function Atlas() {
           ))}
         </div>
         <p className="mt-8 max-w-md text-sm leading-relaxed text-cream/70">
-          Mostly the north. Also: anywhere a good melody refused to stay put.
+          Six traditions in the set. Three from the north, and three that traveled.
         </p>
       </div>
 
@@ -116,10 +116,13 @@ export function Atlas() {
         <div className="sticky top-0 flex h-screen flex-col overflow-hidden pt-24 pb-8">
           <div className="mb-5 flex shrink-0 items-end justify-between gap-10 px-[6vw]">
             <div>
-              <p className="text-xs tracking-[0.28em] text-berry uppercase">A pocket atlas</p>
+              <p className="text-xs tracking-[0.28em] text-berry uppercase">The traditions</p>
               <h2 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] xl:text-6xl">
                 Where the tunes wander
               </h2>
+              <p className="mt-4 max-w-md text-sm leading-relaxed text-cream/70">
+                Six traditions in the set. Three from the north, and three that traveled.
+              </p>
             </div>
             <p className="text-sm tracking-[0.2em] text-cream/70 uppercase">
               0{step} / 0{places.length}
