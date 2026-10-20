@@ -2,12 +2,13 @@ export const site = {
   name: "Far väl",
   tagline: "Nordic folk, and then some",
   description:
-    "Far väl plays Nordic folk music and tunes from across the world. Simon and Kerstin on violin, Peter on guitar, Ankita on song, Kevin on mandolin, and Daniel on clarinet.",
-  /**
-   * Drop a booking address here when you have one.
-   * The hello section turns it into a mailto link.
-   */
-  bookingEmail: "",
+    "Far väl plays Nordic folk music and tunes from across the world. Simon and Kerstin on violin, Peter on guitar, Ankita on song, Kevin on mandolin, and Daniel on clarinette.",
+  contact: {
+    name: "Kevin Karlsson",
+    email: "farvalmusic@gmail.com",
+    phone: "+46 72-350 44 01",
+    phoneHref: "tel:+46723504401",
+  },
 }
 
 export type Show = {
@@ -73,7 +74,7 @@ export const members: Member[] = [
   },
   {
     name: "Daniel",
-    role: "Clarinet",
+    role: "Clarinette",
     scene: "/nature/birch.jpg",
     sceneAlt: "Fog resting on a forested hillside",
   },
@@ -131,7 +132,7 @@ export const marquee = [
   "Guitar",
   "Song",
   "Mandolin",
-  "Clarinet",
+  "Clarinette",
   "Nordic folk",
   "And then some",
 ]

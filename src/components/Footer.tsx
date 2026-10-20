@@ -8,9 +8,16 @@ export function Footer() {
           <p className="font-display text-4xl italic">{site.name}</p>
           <p className="mt-2 text-sm text-cream/65">{site.tagline}</p>
         </div>
-        <p className="max-w-md text-sm leading-relaxed text-cream/70">
-          {members.map((member) => member.name).join(" · ")}
-        </p>
+        <div className="text-sm leading-relaxed text-cream/70">
+          <p>{members.map((member) => member.name).join(" · ")}</p>
+          <p className="mt-3">
+            <a href={`mailto:${site.contact.email}`} className="underline decoration-cream/30 underline-offset-4">
+              {site.contact.email}
+            </a>
+            <span className="mx-2 text-cream/35">·</span>
+            <a href={site.contact.phoneHref}>{site.contact.phone}</a>
+          </p>
+        </div>
       </div>
       {socials.length > 0 ? (
         <ul className="mt-8 flex flex-wrap gap-4 text-sm">

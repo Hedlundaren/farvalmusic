@@ -86,7 +86,19 @@ export function Nav() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      const id = link.href.slice(1);
+                      setOpen(false);
+                      window.setTimeout(() => {
+                        document.body.style.overflow = "";
+                        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                        document.getElementById(id)?.scrollIntoView({
+                          behavior: reduce ? "auto" : "smooth",
+                        });
+                        history.replaceState(null, "", `#${id}`);
+                      }, 60);
+                    }}
                     className="flex items-baseline gap-4 py-1"
                   >
                     <span className="w-8 text-sm text-berry">0{index + 1}</span>
