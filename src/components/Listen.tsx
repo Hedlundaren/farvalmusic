@@ -13,8 +13,9 @@ export function Listen() {
           Better in the room than on a speaker.
         </h2>
         <p className="mt-6 max-w-lg text-lg leading-relaxed text-cream/80">
-          Nothing is up for streaming yet. When there is a recording, it will live
-          here. Until then, the honest way to hear Far väl is in person.
+          Nothing is up for streaming yet. Until there is a recording, the way to
+          meet the music is in the room: a concert, or a workshop where the tunes
+          change hands.
         </p>
         <div className="relative mt-16">
           <div

@@ -32,8 +32,8 @@ export function Ensemble() {
         <p className="text-xs tracking-[0.28em] text-berry uppercase">The band</p>
         <h2 className="mt-3 font-display text-6xl leading-[0.9]">The six</h2>
         <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-soft">
-          Pass a tune around this group and it comes back slightly changed. That is
-          the point.
+          Six players passing the tunes between them, and then out of the band.
+          Concerts and workshops, so the tradition spreads.
         </p>
       </div>
 
@@ -75,8 +75,8 @@ export function Ensemble() {
 
         <div className="px-5 py-10 md:px-8 lg:px-0 lg:py-0">
           <p className="mb-4 hidden max-w-sm text-lg leading-relaxed text-ink-soft lg:ml-16 lg:block lg:pt-28">
-            Pass a tune around this group and it comes back slightly changed. That is
-            the point.
+            Six players passing the tunes between them, and then out of the band.
+            Concerts and workshops, so the tradition spreads.
           </p>
           <ol>
             {members.map((member, index) => {

@@ -1,22 +1,22 @@
 export const site = {
   name: "Far väl",
-  tagline: "Nordic folk, and then some",
+  tagline: "Six members, six traditions. Concerts and workshops.",
   description:
-    "Far väl plays Nordic folk music and tunes from across the world. Ankita on song, Peter on guitar, Kevin on mandolin, Daniel on clarinette, and Kerstin and Simon on violin.",
+    "Far väl shares folk traditions through concerts and workshops with musicians. The aim is to pass the music on, and to inspire.",
   contact: {
     name: "Kevin Karlsson",
     email: "farvalmusic@gmail.com",
     phone: "+46 72-350 44 01",
     phoneHref: "tel:+46723504401",
   },
-}
+};
 
 export type Show = {
-  date: string
-  city: string
-  place: string
-  note?: string
-}
+  date: string;
+  city: string;
+  place: string;
+  note?: string;
+};
 
 /** Add gigs here. An empty list shows the poster-wall empty state. */
 export const shows: Show[] = [
@@ -25,20 +25,23 @@ export const shows: Show[] = [
     city: "Madrid",
     place: "Week 6",
   },
-]
+];
 
 export type Social = {
-  label: string
-  href: string
-}
+  label: string;
+  href: string;
+};
 
-export const socials: Social[] = []
+export const socials: Social[] = [
+  { label: "Instagram", href: "https://www.instagram.com/farvalmusic/" },
+  { label: "Facebook", href: "https://www.facebook.com/farvalmusic/" },
+];
 
 export type Member = {
-  name: string
-  role: string
-  portrait: string
-}
+  name: string;
+  role: string;
+  portrait: string;
+};
 
 export const members: Member[] = [
   { name: "Ankita", role: "Song", portrait: "/members/ankita.webp" },
@@ -47,16 +50,16 @@ export const members: Member[] = [
   { name: "Daniel", role: "Clarinette", portrait: "/members/daniel.webp" },
   { name: "Kerstin", role: "Violin", portrait: "/members/kerstin.webp" },
   { name: "Simon", role: "Violin", portrait: "/members/simon.webp" },
-]
+];
 
 export type Place = {
-  title: string
-  text: string
-  image: string
-  alt: string
+  title: string;
+  text: string;
+  image: string;
+  alt: string;
   /** object-position, so a wide photo still shows the right part of the frame. */
-  focus?: string
-}
+  focus?: string;
+};
 
 export const places: Place[] = [
   {
@@ -77,8 +80,8 @@ export const places: Place[] = [
     title: "Danish",
     text: "Hopsa and sønderhoning. Light on their feet, and a little sly about the rhythm.",
     image: "/traditions/danish.jpg",
-    alt: "White chalk cliffs dropping to the Baltic at Møns Klint",
-    focus: "72% center",
+    alt: "A wooden dock on a calm lake, with forest along the far shore",
+    focus: "center 72%",
   },
   {
     title: "Indian",
@@ -101,7 +104,7 @@ export const places: Place[] = [
     alt: "Layered autumn ridges in the Great Smoky Mountains",
     focus: "center 68%",
   },
-]
+];
 
 export const marquee = [
   "Song",
@@ -112,4 +115,4 @@ export const marquee = [
   "Violin",
   "Nordic folk",
   "And then some",
-]
+];

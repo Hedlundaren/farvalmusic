@@ -45,15 +45,15 @@ export function Hero() {
       >
         <div className="max-w-4xl">
           <p className="text-xs tracking-[0.28em] uppercase text-cream/80">
-            Nordic folk, and the scenic route
+            Nordic folk, passed along
           </p>
           <h1 className="mt-4 font-display text-[clamp(4.6rem,16vw,11rem)] leading-[0.82] tracking-tight">
             <span className="block">Far</span>
             <span className="block italic">väl</span>
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-cream/90 md:text-lg">
-            Two violins, a guitar, a mandolin, a clarinette, and a voice. Six
-            members, six traditions.
+            Six members, six traditions. Concerts to share them, and workshops
+            with musicians so the music keeps moving.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
