@@ -111,8 +111,8 @@ export const marquee = [
   "Guitar",
   "Mandolin",
   "Clarinette",
-  "Violin",
-  "Violin",
+  "Violins",
   "Nordic folk",
-  "And then some",
+  "Concerts",
+  "Workshops",
 ];
