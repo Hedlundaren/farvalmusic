@@ -5,10 +5,12 @@ import { Reveal } from "@/components/Reveal";
 export function About() {
   return (
     <section id="music" className="relative overflow-hidden bg-paper">
-      <DriftWord />
+      {/* <DriftWord /> */}
       <div className="relative mx-auto w-full max-w-6xl px-5 py-24 md:px-8 md:py-32">
         <Reveal>
-          <p className="text-xs tracking-[0.28em] text-berry uppercase">The music</p>
+          <p className="text-xs tracking-[0.28em] text-berry uppercase">
+            The music
+          </p>
           <h2 className="mt-4 max-w-3xl font-display text-[clamp(2.8rem,6vw,5.4rem)] leading-[0.95] tracking-tight">
             Close to home.
             <span className="mt-1 block italic text-berry">Passed along.</span>
@@ -24,9 +26,9 @@ export function About() {
           </Reveal>
           <Reveal className="md:col-span-5 md:col-start-8" delay={0.12}>
             <p className="text-lg leading-relaxed text-ink-soft text-pretty">
-              The name is a wish on the way out the door. Far väl. The work is the
-              same wish: share the tradition, and inspire someone to carry it
-              further.
+              The name is a wish on the way out the door. Far väl. The work is
+              the same wish: share the tradition, and inspire someone to carry
+              it further.
             </p>
           </Reveal>
         </div>
@@ -35,44 +37,24 @@ export function About() {
           <figure className="sm:col-span-5">
             <div className="relative aspect-[3/4] overflow-hidden rounded-[1.6rem]">
               <Image
-                src="/nature/river.jpg"
-                alt="A mossy canyon with a river running through it"
+                src="/the-band/1.jpg"
+                alt="Far väl with fiddles and guitars in front of an autumn pine forest"
                 fill
                 sizes="(min-width: 640px) 40vw, 100vw"
-                className="object-cover"
+                className="origin-[center_50%] scale-145 object-cover object-[center_58%]"
               />
             </div>
-            <figcaption className="mt-3 text-xs tracking-[0.16em] text-ink-soft uppercase">
-              Cold water, green rock
-            </figcaption>
           </figure>
           <figure className="sm:col-span-4 sm:-mb-10">
             <div className="relative aspect-[4/5] rotate-2 overflow-hidden rounded-[1.6rem] shadow-[0_18px_40px_rgb(28_22_18_/_0.12)]">
               <Image
-                src="/nature/autumn.jpg"
-                alt="A still alpine lake framed by pines"
+                src="/the-band/6.jpg"
+                alt="Far väl standing together among the pines, holding instruments"
                 fill
                 sizes="(min-width: 640px) 32vw, 100vw"
-                className="object-cover"
+                className="object-cover object-[center_48%]"
               />
             </div>
-            <figcaption className="mt-3 text-xs tracking-[0.16em] text-ink-soft uppercase">
-              A lake that holds still
-            </figcaption>
-          </figure>
-          <figure className="sm:col-span-3">
-            <div className="relative mx-auto aspect-square max-w-56 overflow-hidden rounded-full sm:max-w-none">
-              <Image
-                src="/nature/wildflowers.jpg"
-                alt="Orange poppies in a bright field"
-                fill
-                sizes="(min-width: 640px) 22vw, 60vw"
-                className="object-cover"
-              />
-            </div>
-            <figcaption className="mt-3 text-center text-xs tracking-[0.16em] text-ink-soft uppercase">
-              The loud field
-            </figcaption>
           </figure>
         </div>
       </div>

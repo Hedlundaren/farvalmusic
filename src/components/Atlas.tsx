@@ -96,7 +96,7 @@ export function Atlas() {
               The traditions
             </p>
             <h2 className="mt-3 font-display text-5xl leading-[0.95]">
-              Where the tunes wander
+              What we play and teach
             </h2>
           </div>
           <p className="text-xs tracking-[0.18em] uppercase text-cream/60">
@@ -129,7 +129,7 @@ export function Atlas() {
                 The traditions
               </p>
               <h2 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] xl:text-6xl">
-                Where the tunes wander
+                What we play and teach
               </h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-cream/70">
                 Six traditions we play and teach, so they keep traveling.

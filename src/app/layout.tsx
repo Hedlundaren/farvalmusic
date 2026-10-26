@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: site.name,
     description: site.description,
-    images: [{ url: "/nature/forest-mist.jpg", alt: "Sunlight in a spruce forest" }],
+    images: [{ url: "/the-band/2.jpg", alt: "Far väl standing in a meadow, looking up toward the pines" }],
   },
 };
 

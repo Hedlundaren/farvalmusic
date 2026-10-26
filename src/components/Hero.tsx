@@ -30,12 +30,12 @@ export function Hero() {
         className="absolute inset-x-0 -top-[12%] h-[124%]"
       >
         <Image
-          src="/nature/forest-mist.jpg"
-          alt="Sunlight through a dark spruce forest"
+          src="/the-band/2.jpg"
+          alt="Far väl standing in a meadow, looking up toward the pines"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[center_72%]"
         />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/25 to-ink/35" />

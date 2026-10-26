@@ -35,8 +35,9 @@ export function Footer() {
           ))}
         </ul>
       ) : null}
-      <div className="mt-10 border-t border-cream/15 pt-6 text-xs tracking-wide text-cream/50">
+      <div className="mt-10 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 border-t border-cream/15 pt-6 text-xs tracking-wide text-cream/50">
         <p>© 2026 Far väl. All rights reserved.</p>
+        <p>Thank you, Rasmus Höjesjö, for the photos.</p>
       </div>
     </footer>
   );
