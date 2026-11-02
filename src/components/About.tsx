@@ -48,7 +48,7 @@ export function About() {
           <figure className="sm:col-span-4 sm:-mb-10">
             <div className="relative aspect-[4/5] rotate-2 overflow-hidden rounded-[1.6rem] shadow-[0_18px_40px_rgb(28_22_18_/_0.12)]">
               <Image
-                src="/the-band/6.jpg"
+                src="/the-band/3.jpg"
                 alt="Far väl standing together among the pines, holding instruments"
                 fill
                 sizes="(min-width: 640px) 32vw, 100vw"
